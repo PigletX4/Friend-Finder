@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Compatibility Survey</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+
+<body id="body">
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p id="matchName" style="font-size:40px; text-align:center" ></p>
+          <img id="matchPic" src='' style="width:fit-content; align-self: center;"> 
+
+        </div>
+      
+      </div>
+
+    <container>
+
+        <div id= "inputField"class="jumbotron">
+            
+            <h1 id="addTrainText" class="display-4">Compatibility Survey</h1>
+            
+            <div class="input-group flex-nowrap">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="addon-wrapping">Name</span>
+                </div>
+                <input  id="nameBox" type="text" class="form-control" placeholder="Name" aria-label="Name aria-describedby="addon-wrapping">
+            </div>
+
+            <div class="input-group flex-nowrap">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="addon-wrapping">Profile Picture</span>
+                </div>
+                <input id="photoBox" type="text" class="form-control" placeholder="Profile Picture" aria-label="Profile Picture" aria-describedby="addon-wrapping">
+            </div>
+
+            <div class="questions">
+                
+                <div class="form-group">
+                    <label for="questionData1">How often do you try to learn something new?</label>
+                    <select class="form-control" id="questionData1">
+                        <option value = 1 >Very Often</option>
+                        <option value = 2 >Somewhat Often</option>
+                        <option value = 3 >Sometimes</option>
+                        <option value = 4 >Very Little</option>
+                        <option value = 5 >Not at all</option>
+                    </select>
+                </div>
+                
+            </div>
+            
+            <div class="questions">
+
+                <div class="form-group">
+                    <label for="questionData2">How often do you exercise?</label>
+                    <select class="form-control" id="questionData2">
+                        <option value = 1 >Very Often</option>
+                        <option value = 2 >Somewhat Often</option>
+                        <option value = 3 >Sometimes</option>
+                        <option value = 4 >Very Little</option>
+                        <option value = 5 >Not at all</option>
+                    </select>
+                </div>
+  
+            </div>
+
+            <div class="questions">
+
+                <div class="form-group">
+                    <label for="questionData3">Do you enjoy lazy days indoors?</label>
+                    <select class="form-control" id="questionData3">
+                        <option value = 1 >Very Often</option>
+                        <option value = 2 >Somewhat Often</option>
+                        <option value = 3 >Sometimes</option>
+                        <option value = 4 >Very Little</option>
+                        <option value = 5 >Not at all</option>
+                    </select>
+                </div>
+                
+            </div>
+            
+            <div class="questions">
+
+                <div class="form-group">
+                    <label for="questionData4">Do you like to try new foods?</label>
+                    <select class="form-control" id="questionData4">
+                        <option value = 1 >Very Often</option>
+                        <option value = 2 >Somewhat Often</option>
+                        <option value = 3 >Sometimes</option>
+                        <option value = 4 >Very Little</option>
+                        <option value = 5 >Not at all</option>
+                    </select>
+                </div>
+                
+            </div>
+
+            <div class="questions">
+
+                <div class="form-group">
+                        <label for="questionData5">Do you read books?</label>
+                        <select class="form-control" id="questionData5">
+                            <option value = 1 >Very Often</option>
+                            <option value = 2 >Somewhat Often</option>
+                            <option value = 3 >Sometimes</option>
+                            <option value = 4 >Very Little</option>
+                            <option value = 5 >Not at all</option>
+                        </select>
+                    </div>
+                
+            </div>
+
+            <div class="questions">
+
+                <div class="form-group">
+                        <label for="questionData6">Do you enjoy traveling?</label>
+                        <select class="form-control" id="questionData6">
+                            <option value = 1 >Very Often</option>
+                            <option value = 2 >Somewhat Often</option>
+                            <option value = 3 >Sometimes</option>
+                            <option value = 4 >Very Little</option>
+                            <option value = 5 >Not at all</option>
+                        </select>
+                    </div>
+                
+            </div>
+
+            <div class="questions">
+                
+                <div class="form-group">
+                        <label for="questionData7">Do you find yourself worrying about things often?</label>
+                        <select class="form-control" id="questionData7">
+                            <option value = 1 >Very Often</option>
+                            <option value = 2 >Somewhat Often</option>
+                            <option value = 3 >Sometimes</option>
+                            <option value = 4 >Very Little</option>
+                            <option value = 5 >Not at all</option>
+                        </select>
+                    </div>
+                
+            </div>
+
+            <div class="questions">
+
+                <div class="form-group">
+                        <label for="questionData8">How often do you laugh?</label>
+                        <select class="form-control" id="questionData8">
+                            <option value = 1 >Very Often</option>
+                            <option value = 2 >Somewhat Often</option>
+                            <option value = 3 >Sometimes</option>
+                            <option value = 4 >Very Little</option>
+                            <option value = 5 >Not at all</option>
+                        </select>
+                    </div>
+                
+            </div>
+
+            <div class="questions">
+
+                <div class="form-group">
+                        <label for="questionData9">Do you like to binge watch TV shows?</label>
+                        <select class="form-control" id="questionData9">
+                            <option value = 1 >Very Often</option>
+                            <option value = 2 >Somewhat Often</option>
+                            <option value = 3 >Sometimes</option>
+                            <option value = 4 >Very Little</option>
+                            <option value = 5 >Not at all</option>
+                        </select>
+                    </div>
+                
+                
+            </div>
+
+            <div class="questions">
+
+                <div class="form-group">
+                        <label for="questionData10">Do you like to argue?</label>
+                        <select class="form-control" id="questionData10">
+                            <option value = 1 >Very Often</option>
+                            <option value = 2 >Somewhat Often</option>
+                            <option value = 3 >Sometimes</option>
+                            <option value = 4 >Very Little</option>
+                            <option value = 5 >Not at all</option>
+                        </select>
+                    </div>
+                
+            </div>
+        
+        
+
+            
+
+            <button onclick="sendUserData()" id ="submitButton" type="button" class="btn btn-secondary btn-lg">Submit</button>
+
+        </div>
+    
+    
+    </container>
+
+
+</body>
+<script>
+
+
+    function sendUserData() {
+
+        var modal = document.getElementById('myModal');
+
+        var btn = document.getElementById("submitButton");
+
+        var span = document.getElementsByClassName("close")[0];
+
+        modal.style.display = "block";
+        
+
+        span.onclick = function() {
+        modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+        }
+
+        var userData = {
+            name:'',
+            photo:'',
+            scores:[]
+
+        };
+
+        userData.name = $("#nameBox").val();
+        userData.photo = $("#photoBox").val();
+
+        for(i = 1; i < 11; i++){
+           var stringAnswer = $('#questionData' + i).val();
+           var answer = parseInt(stringAnswer);
+           console.log(answer)
+           userData.scores.push(answer);
+        }
+
+        console.log(userData)
+
+        $.post("/api/friends", userData)
+         .then(function(friendsData){
+            var options = friendsData;
+
+            var matches = [];
+
+            for(e = 0; e < friendsData.length; e++) {
+                var results = 0;
+                var uD = userData.scores;
+                var fD = friendsData[e].scores;
+
+                for(z = 0; z < 10; z++){  
+                    var rD = Math.abs(uD[z] - fD[z]);
+                    var results = results + rD;
+                }
+
+                matches.push(results);
+
+
+
+            }
+
+
+            var bestMatch = indexOfSmallest(matches);
+
+            console.log("Array of differences in matches scores to user " + matches)
+            
+            
+
+            console.log(bestMatch + " is the best matches index")
+
+            $('#matchName').text(friendsData[bestMatch].name);
+            $('#matchPic').attr('src', friendsData[bestMatch].photo);
+
+            
+            function indexOfSmallest(matches) {
+                var lowest = 0;
+
+                for (var i = 0; i < matches.length - 1; i++) {
+                if (matches[i] < matches[lowest]) lowest = i;
+                }
+                return lowest
+            }
+
+
+
+        })
+    
+            
+    };
+
+
+
+
+
+</script>
+
+
+</html>

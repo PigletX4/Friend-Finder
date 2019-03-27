@@ -1,0 +1,69 @@
+var friendsData = [
+    
+    {   name:"Ricky",
+        photo:"https://randomuser.me/api/portraits/men/14.jpg",
+        scores:[
+            1,
+            2,
+            5,
+            3,
+            2,
+            5,
+            2,
+            1,
+            3,
+            4
+        ]
+    },
+    {
+        name:"Liz",
+        photo:"https://randomuser.me/api/portraits/women/29.jpg",
+        scores:[
+            2,
+            4,
+            1,
+            1,
+            5,
+            4,
+            3,
+            3,
+            3,
+            5
+        ]
+    },
+    {
+        name:"Eric",
+        photo:"https://randomuser.me/api/portraits/men/9.jpg",
+        scores:[
+            1,
+            1,
+            1,
+            5,
+            5,
+            2,
+            3,
+            5,
+            4,
+            2
+        ]
+    },
+    {
+        name:"Hydie",
+        photo:"https://randomuser.me/api/portraits/women/3.jpg",
+        scores:[
+            5,
+            4,
+            4,
+            5,
+            2,
+            3,
+            1,
+            1,
+            2,
+            5
+        ]
+    }
+
+];
+
+module.exports = friendsData;
